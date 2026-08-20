@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vikas Nagar — Data Scientist Portfolio</title>
+  <meta name="description" content="Vikas Nagar — Aspiring Data Scientist passionate about turning data into impactful decisions using machine learning, data analysis, and data visualization.">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">VN</span>
+        <span class="logo-text">Vikas Nagar</span>
+      </a>
+      <div class="nav-overlay" id="navOverlay"></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About Me</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <a href="docs/Vikas_Nagar_Resume.pdf" download class="nav-resume-btn" id="downloadResumeBtn">
+        Download Resume
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO SECTION ============ -->
+  <section class="hero section" id="home">
+    <canvas id="particle-canvas"></canvas>
+    <div class="container">
+      <div class="hero-content">
+        <div class="availability-badge">
+          <span class="dot"></span>
+          AVAILABLE FOR OPPORTUNITIES
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="name">Vikas</span><br>
+          Turning Data into<br>
+          <span class="accent">Impactful Decisions</span>
+        </h1>
+        <p class="hero-description">
+          I'm a Data Scientist passionate about exploring data, building machine learning models, and developing data-driven solutions that solve real-world problems.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">
+            View My Work
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="mailto:nagarvikas2003@gmail.com" class="btn-outline">
+            Get In Touch
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </a>
+        </div>
+        <div class="scroll-indicator">
+          <div class="mouse"></div>
+          <div>
+            <span>Scroll Down</span>
+            <svg class="scroll-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/images/hero-3d.jpg" alt="3D Data Visualization Hologram" class="hero-3d-image" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT SECTION ============ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <!-- Left Column -->
+      <div class="about-left reveal">
+        <span class="section-label">ABOUT ME</span>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <div class="about-text">
+          <p>I am an aspiring Data Scientist passionate about extracting insights from data and building intelligent solutions that drive real-world impact.</p>
+          <p>I enjoy solving complex problems using a combination of statistical analysis, machine learning, and data visualization.</p>
+          <p>With a strong foundation in programming and analytics, I love turning raw data into meaningful stories and actionable decisions.</p>
+        </div>
+        <div class="about-traits">
+          <div class="trait-card">
+            <div class="trait-icon">👤</div>
+            <h4>Problem Solver</h4>
+            <p>Analytical mindset with a passion for solving real-world problems.</p>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon">📊</div>
+            <h4>Data Enthusiast</h4>
+            <p>Love working with data, discovering patterns, and driving insights.</p>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon">💡</div>
+            <h4>Continuous Learner</h4>
+            <p>Always learning new technologies and improving my skills.</p>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon">🎯</div>
+            <h4>Detail Oriented</h4>
+            <p>Strong attention to detail to deliver accurate and impactful results.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center Column (Photo) -->
+      <div class="about-center reveal reveal-delay-2">
+        <div class="profile-photo-wrap">
+          <img src="assets/images/profile.jpg" alt="Vikas Nagar Profile Photo" class="profile-photo">
+        </div>
+      </div>
+
+      <!-- Right Column (Info Cards) -->
+      <div class="about-right reveal reveal-delay-3">
+        <div class="about-info-card">
+          <div class="about-info-card-header">
+            <span class="icon">👤</span>
+            <h4>Who I Am</h4>
+          </div>
+          <p>A detail-oriented and curious individual who enjoys working with data to solve meaningful problems. I aim to leverage data-driven approaches to build scalable solutions and contribute to impactful projects.</p>
+        </div>
+        <div class="about-info-card">
+          <div class="about-info-card-header">
+            <span class="icon">⚙️</span>
+            <h4>My Approach</h4>
+          </div>
+          <p>Understand → Explore → Prepare → Model → Evaluate → Deploy & Communicate</p>
+          <p style="margin-top:8px">I follow a structured approach to ensure every solution is accurate, reliable, and insightful.</p>
+        </div>
+        <div class="about-info-card">
+          <div class="about-info-card-header">
+            <span class="icon">❤️</span>
+            <h4>Tech I Love</h4>
+          </div>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+              <span>Python</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+              <span>SQL</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+              <span>Pandas</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn">
+              <span>Scikit-learn</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+              <span>TensorFlow</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter">
+              <span>Jupyter</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="filter:invert(1)">
+              <span>GitHub</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://img.icons8.com/color/48/microsoft-excel-2019--v1.png" alt="Excel">
+              <span>Excel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Quote & Info Row -->
+      <div class="about-quote reveal">
+        <div class="quote-card">
+          <span class="quote-mark">❝</span>
+          <p>Data is the new fuel, and I am here to turn it into decisions that create value.</p>
+          <span class="quote-mark">❞</span>
+        </div>
+        <div class="info-cards">
+          <div class="info-chip">
+            <span class="info-chip-icon">📍</span>
+            <div>
+              <h5>Location</h5>
+              <p>Rajasthan, India</p>
+            </div>
+          </div>
+          <div class="info-chip">
+            <span class="info-chip-icon">🎓</span>
+            <div>
+              <h5>Education</h5>
+              <p>B.Tech (CSE)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS SECTION ============ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="skills-header reveal">
+        <div class="skills-header-left">
+          <span class="section-label">MY SKILLS</span>
+          <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+        </div>
+        <div class="skills-header-right">
+          <p>Technologies and tools I've learned and worked with to build data-driven solutions.</p>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Programming & Databases -->
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-card-icon">💻</div>
+            <h3 class="skill-card-title">Programming & Databases</h3>
+          </div>
+          <div class="skill-card-content">
+            <div class="skill-group">
+              <h5><span class="sg-icon">🐍</span> Python</h5>
+              <ul>
+                <li>Core: OOP, Functions, Data Structures</li>
+                <li>Data Handling: Pandas, NumPy</li>
+                <li>Programming: Exception Handling, Control Flow</li>
+                <li>Visualization: Matplotlib, Seaborn</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h5><span class="sg-icon">🗄️</span> SQL</h5>
+              <ul>
+                <li>Joins</li>
+                <li>Subqueries</li>
+                <li>CTEs</li>
+                <li>Aggregations, Grouping</li>
+                <li>Views and Stored Procedures</li>
+                <li>Window Functions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Analysis & Visualization -->
+        <div class="skill-card has-image reveal reveal-delay-1">
+          <div class="skill-card-header">
+            <div class="skill-card-icon">📈</div>
+            <h3 class="skill-card-title">Data Analysis & Visualization</h3>
+          </div>
+          <div class="skill-card-content">
+            <div class="skill-group">
+              <ul>
+                <li>Data Cleaning & Preprocessing</li>
+                <li>Exploratory Data Analysis (EDA)</li>
+                <li>Descriptive Statistics</li>
+                <li>Data Visualization (Matplotlib, Seaborn)</li>
+              </ul>
+            </div>
+          </div>
+          <img src="assets/images/skills-3d.jpg" alt="" class="skill-bg-image">
+        </div>
+
+        <!-- Machine Learning (Full Width) -->
+        <div class="skill-card full-width reveal">
+          <div class="skill-card-header">
+            <div class="skill-card-icon">🧠</div>
+            <h3 class="skill-card-title">Machine Learning</h3>
+          </div>
+          <div class="skill-card-content">
+            <div class="skill-group">
+              <h5><span class="sg-icon">⚙️</span> Tasks</h5>
+              <ul>
+                <li>Classification</li>
+                <li>Regression</li>
+                <li>Clustering</li>
+                <li>Recommendation Systems</li>
+                <li>NLP</li>
+                <li>Time Series Forecasting</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h5><span class="sg-icon">✨</span> Algorithms</h5>
+              <ul>
+                <li>Linear & Logistic Regression</li>
+                <li>Decision Trees</li>
+                <li>Random Forest</li>
+                <li>SVM</li>
+                <li>Naive Bayes</li>
+                <li>K-Nearest Neighbors (KNN)</li>
+                <li>XGBoost</li>
+                <li>LightGBM</li>
+                <li>K-Means</li>
+                <li>PCA</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h5><span class="sg-icon">🔬</span> Modeling & Evaluation</h5>
+              <ul>
+                <li>Train-Test Split</li>
+                <li>Cross-Validation</li>
+                <li>Evaluation Metrics</li>
+                <li>Hyperparameter Tuning</li>
+                <li>Feature Importance (SHAP)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Python Libraries & Tools -->
+      <div class="skills-bottom-row reveal">
+        <div class="lib-card">
+          <div class="lib-card-header">
+            <div class="lib-card-icon">📦</div>
+            <h3 class="lib-card-title">Python Libraries</h3>
+          </div>
+          <div class="lib-icons">
+            <div class="lib-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
+              <span>NumPy</span>
+            </div>
+            <div class="lib-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+              <span>Pandas</span>
+            </div>
+            <div class="lib-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib">
+              <span>Matplotlib</span>
+            </div>
+            <div class="lib-item">
+              <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="Seaborn">
+              <span>Seaborn</span>
+            </div>
+            <div class="lib-item">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn">
+              <span>Scikit-learn</span>
+            </div>
+            <div class="lib-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+              <span>TensorFlow</span>
+            </div>
+            <div class="lib-item">
+              <img src="https://www.statsmodels.org/stable/_images/statsmodels-logo-v2-horizontal.svg" alt="Statsmodels">
+              <span>Statsmodels</span>
+            </div>
+            <div class="lib-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="NLTK">
+              <span>NLTK</span>
+            </div>
+          </div>
+        </div>
+        <div class="lib-card">
+          <div class="lib-card-header">
+            <div class="lib-card-icon">🔧</div>
+            <h3 class="lib-card-title">Tools & Platforms</h3>
+          </div>
+          <div class="lib-icons">
+            <div class="lib-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+              <span>Git</span>
+            </div>
+            <div class="lib-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="filter:invert(1)">
+              <span>GitHub</span>
+            </div>
+            <div class="lib-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter Notebook">
+              <span>Jupyter Notebook</span>
+            </div>
+            <div class="lib-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg" alt="Streamlit">
+              <span>Streamlit</span>
+            </div>
+            <div class="lib-item">
+              <img src="https://img.icons8.com/color/48/microsoft-sql-server.png" alt="SQL Server">
+              <span>SQL Server</span>
+            </div>
+            <div class="lib-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+              <span>VS Code</span>
+            </div>
+            <div class="lib-item">
+              <img src="https://img.icons8.com/color/48/microsoft-excel-2019--v1.png" alt="Excel">
+              <span>Excel</span>
+            </div>
+            <div class="lib-item">
+              <img src="https://img.icons8.com/color/48/power-bi.png" alt="Power BI">
+              <span>Power BI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE SECTION ============ -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="page-title-wrap reveal">
+        <div class="page-title-line">
+          <h2 class="page-title">EXPERIENCE</h2>
+        </div>
+        <p class="page-subtitle">My professional journey and work experience in the field of data science and analytics.</p>
+      </div>
+      <div class="experience-coming-soon reveal">
+        <div class="icon-large">🚀</div>
+        <h3>Coming Soon</h3>
+        <p>I'm currently building my professional experience. This section will be updated as I embark on my career journey in Data Science.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS SECTION ============ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="page-title-wrap reveal">
+        <div class="page-title-line">
+          <h2 class="page-title">PROJECTS</h2>
+        </div>
+        <div class="page-title-icon">💻</div>
+        <p class="page-subtitle">A showcase of end-to-end data science projects where I turn raw data into meaningful insights, predictive models, and interactive solutions.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: E-Commerce -->
+        <div class="project-card reveal">
+          <div class="project-image-wrap">
+            <div class="project-card-number">01</div>
+            <img src="assets/images/project-ecommerce.jpg" alt="E-Commerce Customer Analytics Dashboard" loading="lazy">
+          </div>
+          <div class="project-card-body">
+            <h3>E-Commerce Customer Analytics</h3>
+            <p class="project-subtitle">(Customer360)</p>
+            <p>Built a Customer360 dataset with 118 behavioral features and developed ML models to predict high-value customers and churners and apply RFM segmentation to identify their behavioural cohorts. Deployed an interactive Streamlit dashboard for actionable insights.</p>
+            <div class="project-card-actions">
+              <a href="https://ecommerce-customer-analytics-dashboard.streamlit.app/" target="_blank" rel="noopener" class="btn-live">
+                View Live App
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/vikasnagar31/Ecommerce_Customers_Analytics_Project" target="_blank" rel="noopener" class="btn-github">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Telecom -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-image-wrap">
+            <div class="project-card-number">02</div>
+            <img src="assets/images/project-telecom.jpg" alt="Telecom Behavioral Segmentation" loading="lazy">
+          </div>
+          <div class="project-card-body">
+            <h3>Telecom Behavioral Segmentation</h3>
+            <p class="project-subtitle"></p>
+            <p>Built an end-to-end ML pipeline to segment telecom customers into 6 clusters using K-Means with domain-driven validation; identified high-value segments and usage patterns to inform targeted marketing and retention campaigns.</p>
+            <div class="project-card-actions">
+              <a href="https://teleinsight.streamlit.app/" target="_blank" rel="noopener" class="btn-live">
+                View Live App
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/vikasnagar31/telecom_behavioral_segmentation-end-to-end" target="_blank" rel="noopener" class="btn-github">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Movie Recommendation -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-image-wrap">
+            <div class="project-card-number">03</div>
+            <img src="assets/images/project-movie.jpg" alt="Movie Recommendation System" loading="lazy">
+          </div>
+          <div class="project-card-body">
+            <h3>Movie Recommendation System</h3>
+            <p class="project-subtitle">(CineMatch)</p>
+            <p>Built a content-based movie recommender using 7,692 MovieLens titles. Engineered 19 features and used cosine similarity to deliver personalized recommendations. Integrated OMDb API for rich movie metadata.</p>
+            <div class="project-card-actions">
+              <a href="https://cinematch-recommendation-engine.streamlit.app/" target="_blank" rel="noopener" class="btn-live">
+                View Live App
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/vikasnagar31/Movie_Recommondation_System_app" target="_blank" rel="noopener" class="btn-github">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-explore reveal">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        Explore more projects on <a href="https://github.com/vikasnagar31" target="_blank" rel="noopener">my GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATIONS SECTION ============ -->
+  <section class="certifications section" id="certifications">
+    <div class="container">
+      <div class="page-title-wrap reveal">
+        <div class="page-title-line">
+          <h2 class="page-title">MY CERTIFICATIONS</h2>
+        </div>
+        <p class="page-subtitle">Continuous learning is my mindset. Here are some of the certifications that validate my skills and knowledge.</p>
+      </div>
+
+      <div class="certs-grid">
+        <!-- Cert 1: IIT Guwahati -->
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="https://i.postimg.cc/pXtHWPg9/IIT-Certificate-Vikas-Nagar.png" alt="IIT Guwahati Certificate" loading="lazy">
+          </div>
+          <div class="cert-card-body">
+            <div class="cert-icon">🎓</div>
+            <h4>Advanced Certification in Data Science & AI</h4>
+            <p class="cert-issuer">E&ICT Academy, IIT Guwahati</p>
+            <p class="cert-id-label">Credential ID</p>
+            <p class="cert-id">EICT/2425/074-OC/36/052</p>
+          </div>
+        </div>
+
+        <!-- Cert 2: Certified Data Scientist -->
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-image-wrap">
+            <img src="https://i.postimg.cc/mgB1HfF9/Analytix-Labs-Machine-Learning-Certificate.png" alt="Certified Data Scientist Certificate" loading="lazy">
+          </div>
+          <div class="cert-card-body">
+            <div class="cert-icon">🏅</div>
+            <h4>Certified Data Scientist</h4>
+            <p class="cert-issuer">AnalytixLabs</p>
+            <p class="cert-id-label">Credential ID</p>
+            <p class="cert-id">ALB-MLP-25052025-4072</p>
+          </div>
+        </div>
+
+        <!-- Cert 3: Certified Data Analyst (Python) -->
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-image-wrap">
+            <img src="https://i.postimg.cc/sfJrgksV/Analytix-Labs-DVA-Certificate.png" alt="Certified Data Analyst Python Certificate" loading="lazy">
+          </div>
+          <div class="cert-card-body">
+            <div class="cert-icon">💻</div>
+            <h4>Certified Data Analyst (Python)</h4>
+            <p class="cert-issuer">AnalytixLabs</p>
+            <p class="cert-id-label">Credential ID</p>
+            <p class="cert-id">ALB-DVA-12112024-3360</p>
+          </div>
+        </div>
+
+        <!-- Cert 4: Certified Data Analyst (Excel, SQL & Power BI) -->
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="https://i.postimg.cc/FH5gCBk0/Python-for-Data-Science-certificate-Analytixlabs.png" alt="Certified Data Analyst Excel SQL Power BI Certificate" loading="lazy">
+          </div>
+          <div class="cert-card-body">
+            <div class="cert-icon">📊</div>
+            <h4>Certified Data Analyst (Excel, SQL & Power BI)</h4>
+            <p class="cert-issuer">AnalytixLabs</p>
+            <p class="cert-id-label">Credential ID</p>
+            <p class="cert-id">ALB-DVA-12112024-3360</p>
+          </div>
+        </div>
+
+        <!-- Cert 5: Data Science with AI Training -->
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-image-wrap">
+            <img src="https://i.postimg.cc/zGzMPvg1/Data-Science-with-AI-Training-Internshala-Certificate-of-Completion.png" alt="Internshala Data Science with AI Certificate" loading="lazy">
+          </div>
+          <div class="cert-card-body">
+            <div class="cert-icon">🖥️</div>
+            <h4>Data Science with AI Training</h4>
+            <p class="cert-issuer">Internshala Trainings</p>
+            <p class="cert-id-label">Credential ID</p>
+            <p class="cert-id">95opstykgjl</p>
+          </div>
+        </div>
+
+        <!-- Cert 6: Data Science Course NSDC -->
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-image-wrap">
+            <img src="https://i.postimg.cc/qRhWXFCZ/Training-NSDC-certificate.png" alt="NSDC Data Science Course Certificate" loading="lazy">
+          </div>
+          <div class="cert-card-body">
+            <div class="cert-icon">🎖️</div>
+            <h4>Data Science Course</h4>
+            <p class="cert-issuer">National Skill Development Corporation (NSDC)</p>
+            <p class="cert-id-label">Credential ID</p>
+            <p class="cert-id">2275gw8mwbs630xw</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="certs-footer reveal">
+        <span class="star-icon">⭐</span>
+        <div class="certs-footer-text">
+          <h4>Always learning, always growing.</h4>
+          <p>These certifications are milestones in my journey of becoming a better Data Scientist.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <!-- Contact Left -->
+      <div class="contact-left reveal">
+        <div class="availability-badge">
+          <span class="dot"></span>
+          LET'S CONNECT
+        </div>
+        <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+        <p>I'm always open to discussing new opportunities, collaborating on interesting projects, or just having a chat about data and technology. Feel free to reach out!</p>
+        <img src="assets/images/contact-3d.jpg" alt="Contact 3D Graphic" class="contact-3d-image">
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-card reveal reveal-delay-1">
+        <div class="contact-form-header">
+          <span class="icon">✉️</span>
+          <h3>Send Me a Message</h3>
+        </div>
+        <p class="form-sub">I'll get back to you as soon as possible.</p>
+        <form id="contactForm" action="https://formsubmit.co/nagarvikas2003@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Portfolio Contact Form Message">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <div class="form-input-wrap">
+              <span class="input-icon">👤</span>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <div class="form-input-wrap">
+              <span class="input-icon">📧</span>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <div class="form-input-wrap">
+              <span class="input-icon">💬</span>
+              <input type="text" id="subject" name="_subject" placeholder="What's this about?">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <div class="form-input-wrap">
+              <span class="input-icon">✏️</span>
+              <textarea id="message" name="message" placeholder="Type your message here..." rows="4" required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn-send">
+            Send Message
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Right (Info) -->
+      <div class="contact-right reveal reveal-delay-2">
+        <div class="contact-right-header">
+          <span class="icon">👤</span>
+          <h3>Get In Touch</h3>
+        </div>
+        <p class="info-desc">You can also reach me through these channels.</p>
+
+        <a href="mailto:nagarvikas2003@gmail.com" class="contact-info-item">
+          <div class="contact-info-icon">📧</div>
+          <div class="contact-info-text">
+            <h5>Email</h5>
+            <p>nagarvikas2003@gmail.com</p>
+          </div>
+        </a>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📞</div>
+          <div class="contact-info-text">
+            <h5>Phone</h5>
+            <p>9785285563</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📍</div>
+          <div class="contact-info-text">
+            <h5>Location</h5>
+            <p>Rajasthan, India</p>
+          </div>
+        </div>
+
+        <a href="https://www.linkedin.com/in/vikas31/" target="_blank" rel="noopener" class="contact-info-item">
+          <div class="contact-info-icon">💼</div>
+          <div class="contact-info-text">
+            <h5>LinkedIn</h5>
+            <p>linkedin.com/in/vikas31/</p>
+          </div>
+          <span class="contact-info-external">↗</span>
+        </a>
+
+        <a href="https://github.com/vikasnagar31" target="_blank" rel="noopener" class="contact-info-item">
+          <div class="contact-info-icon">🐙</div>
+          <div class="contact-info-text">
+            <h5>GitHub</h5>
+            <p>github.com/vikasnagar31</p>
+          </div>
+          <span class="contact-info-external">↗</span>
+        </a>
+      </div>
+
+      <!-- Contact Bottom Bar -->
+      <div class="contact-bottom reveal">
+        <div class="contact-bottom-text">
+          <h4>Let's Build Something <span class="highlight">Amazing Together</span></h4>
+          <p>I'm excited to work on projects that solve real-world problems using data and create meaningful impact.</p>
+        </div>
+        <div class="bottom-skill">
+          <div class="bottom-skill-icon">📊</div>
+          <div>
+            <h5>Data Science</h5>
+            <p>Turning data into actionable insights</p>
+          </div>
+        </div>
+        <div class="bottom-skill">
+          <div class="bottom-skill-icon">🧠</div>
+          <div>
+            <h5>Machine Learning</h5>
+            <p>Building intelligent models that learn and adapt</p>
+          </div>
+        </div>
+        <div class="bottom-skill">
+          <div class="bottom-skill-icon">📈</div>
+          <div>
+            <h5>Data Visualization</h5>
+            <p>Creating compelling stories through data</p>
+          </div>
+        </div>
+        <div class="bottom-skill">
+          <div class="bottom-skill-icon">🎯</div>
+          <div>
+            <h5>Problem Solving</h5>
+            <p>Solving complex problems with analytical thinking</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p class="footer-social-text">Connect with me on social media</p>
+    <div class="footer-social-icons">
+      <a href="https://www.linkedin.com/in/vikas31/" target="_blank" rel="noopener" class="social-icon-btn" aria-label="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+      </a>
+      <a href="https://github.com/vikasnagar31" target="_blank" rel="noopener" class="social-icon-btn" aria-label="GitHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a href="mailto:nagarvikas2003@gmail.com" class="social-icon-btn" aria-label="Email">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+      <a href="https://github.com/vikasnagar31" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Code">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+      </a>
+    </div>
+    <p class="footer-copy">© 2025 Vikas Nagar. All rights reserved. Built with ❤️ and Data.</p>
+  </footer>
+
+  <!-- ============ JAVASCRIPT ============ -->
+  <script src="script.js"></script>
+</body>
+</html>
